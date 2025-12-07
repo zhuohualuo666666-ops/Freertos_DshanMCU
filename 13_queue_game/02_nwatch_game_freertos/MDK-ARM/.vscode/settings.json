@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "freertos.h": "c",
+        "driver_lcd.h": "c",
+        "typedefs.h": "c"
+    }
+}

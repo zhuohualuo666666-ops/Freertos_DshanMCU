@@ -1,0 +1,47 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\keil5\ARM\ARMCC\Bin'
+Build target '01_freertos_template'
+compiling resources.c...
+..\nwatch\typedefs.h(25): warning:  #65-D: expected a ";"
+  };
+..\nwatch\resources.h(14): error:  #40: expected an identifier
+  typedef unsigned char byte;
+..\nwatch\resources.c: 1 warning, 1 error
+compiling draw.c...
+..\nwatch\typedefs.h(25): warning:  #65-D: expected a ";"
+  };
+..\nwatch\draw.h(14): error:  #40: expected an identifier
+  void draw_string_P(const char*, bool, byte, byte);
+..\nwatch\draw.c: 1 warning, 1 error
+compiling game1.c...
+..\nwatch\typedefs.h(25): warning:  #65-D: expected a ";"
+  };
+..\nwatch\draw.h(14): error:  #40: expected an identifier
+  void draw_string_P(const char*, bool, byte, byte);
+..\nwatch\game1.c(81): warning:  #177-D: variable "dev"  was declared but never referenced
+      uint8_t dev, data, last_data;
+..\nwatch\game1.c(161): warning:  #223-D: function "memset" declared implicitly
+      memset(blocks, 0, BLOCK_COUNT);
+..\nwatch\game1.c(141): warning:  #177-D: variable "dev"  was declared but never referenced
+      uint8_t dev, data, last_data;
+..\nwatch\game1.c(141): warning:  #177-D: variable "data"  was declared but never referenced
+      uint8_t dev, data, last_data;
+..\nwatch\game1.c(141): warning:  #177-D: variable "last_data"  was declared but never referenced
+      uint8_t dev, data, last_data;
+..\nwatch\game1.c(349): warning:  #223-D: function "draw_string_P" declared implicitly
+  		draw_string_P(PSTR(STR_WIN), false, 50, 32);
+..\nwatch\game1.c(353): warning:  #223-D: function "draw_string_P" declared implicitly
+  		draw_string_P(PSTR(STR_GAMEOVER), false, 34, 32);
+..\nwatch\game1.c(210): warning:  #177-D: variable "platformXtmp"  was declared but never referenced
+  	byte platformXtmp = platformX;
+..\nwatch\game1.c(177): warning:  #177-D: function "btnExit"  was declared but never referenced
+  static bool btnExit()
+..\nwatch\game1.c(73): warning:  #550-D: variable "g_framebuffer"  was set but never used
+  static uint8_t *g_framebuffer;
+..\nwatch\game1.c: 11 warnings, 1 error
+compiling driver_ir_receiver.c...
+..\Drivers\DshanMCU-F103\driver_ir_receiver.c(20): error:  #5: cannot open source input file "typedefs.h": No such file or directory
+  #include "typedefs.h"
+..\Drivers\DshanMCU-F103\driver_ir_receiver.c: 0 warnings, 1 error
+"01_freertos_template\01_freertos_template.axf" - 4 Error(s), 13 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02
