@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "freertos.h": "c",
+        "driver_lcd.h": "c",
+        "typedefs.h": "c",
+        "driver_ir_receiver.h": "c",
+        "driver_rotary_encoder.h": "c",
+        "stdint.h": "c"
+    }
+}
