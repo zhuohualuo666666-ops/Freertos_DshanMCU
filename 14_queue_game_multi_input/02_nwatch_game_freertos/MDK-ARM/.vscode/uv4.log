@@ -1,0 +1,45 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\keil5\ARM\ARMCC\Bin'
+Build target '01_freertos_template'
+compiling resources.c...
+..\nwatch\typedefs.h(25): warning:  #65-D: expected a ";"
+  };
+..\nwatch\resources.c: 1 warning, 0 errors
+compiling draw.c...
+..\nwatch\typedefs.h(25): warning:  #65-D: expected a ";"
+  };
+..\nwatch\draw.c: 1 warning, 0 errors
+compiling game1.c...
+..\nwatch\typedefs.h(25): warning:  #65-D: expected a ";"
+  };
+..\nwatch\game1.c(85): warning:  #177-D: variable "dev"  was declared but never referenced
+      uint8_t dev, data, last_data;
+..\nwatch\game1.c(200): warning:  #223-D: function "memset" declared implicitly
+      memset(blocks, 0, BLOCK_COUNT);
+..\nwatch\game1.c(176): warning:  #177-D: variable "dev"  was declared but never referenced
+      uint8_t dev, data, last_data;
+..\nwatch\game1.c(176): warning:  #177-D: variable "data"  was declared but never referenced
+      uint8_t dev, data, last_data;
+..\nwatch\game1.c(176): warning:  #177-D: variable "last_data"  was declared but never referenced
+      uint8_t dev, data, last_data;
+..\nwatch\game1.c(249): warning:  #177-D: variable "platformXtmp"  was declared but never referenced
+  	byte platformXtmp = platformX;
+..\nwatch\game1.c(216): warning:  #177-D: function "btnExit"  was declared but never referenced
+  static bool btnExit()
+..\nwatch\game1.c(73): warning:  #550-D: variable "g_framebuffer"  was set but never used
+  static uint8_t *g_framebuffer;
+..\nwatch\game1.c: 9 warnings, 0 errors
+compiling driver_rotary_encoder.c...
+..\nwatch\typedefs.h(25): warning:  #65-D: expected a ";"
+  };
+..\Drivers\DshanMCU-F103\driver_rotary_encoder.c: 1 warning, 0 errors
+compiling driver_ir_receiver.c...
+..\nwatch\typedefs.h(25): warning:  #65-D: expected a ";"
+  };
+..\Drivers\DshanMCU-F103\driver_ir_receiver.c(78): warning:  #177-D: function "PutKeyToBuf"  was declared but never referenced
+  static void PutKeyToBuf(unsigned char key)
+..\Drivers\DshanMCU-F103\driver_ir_receiver.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=22060 RO-data=2880 RW-data=4260 ZI-data=11100  
+FromELF: creating hex file...
+"01_freertos_template\01_freertos_template.axf" - 0 Error(s), 14 Warning(s).
+Build Time Elapsed:  00:00:03
