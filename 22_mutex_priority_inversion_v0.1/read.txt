@@ -1,0 +1,1 @@
+Car3Task先执行，执行到 vTaskDelay(2000);时切换至Car2Task，执行到vTaskDelay(1000);时再切换至Car1Task，car1移动一段距离，等Car2Task的vTaskDelay(1000)阻塞完了就切换至Car2Task执行，car2移动一段距离，等Car3Task的vTaskDelay(2000);阻塞完再切换至Car3Task执行xSemaphoreTake(g_xSemTicks,portMAX_DELAY);这一句，因为Car1Task已经获取了互斥量，Car3Task再次进入阻塞，并提高Car1Task优先级，此时car1，car2交替运行，但car1运行更快。程序卡在此处car1运行处。
